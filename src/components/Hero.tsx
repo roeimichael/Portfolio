@@ -1,13 +1,14 @@
 import { ArrowRight, Github, Linkedin, Mail, MapPin } from "lucide-react";
 import { profile } from "../data";
+import VantaGlobe from "./VantaGlobe";
 
 export default function Hero() {
   return (
-    <section id="top" className="relative overflow-hidden">
-      <div className="absolute inset-0 grid-bg opacity-50 pointer-events-none" />
-      <div className="absolute inset-0 glow pointer-events-none" />
+    <section id="top" className="relative overflow-hidden min-h-[100svh] flex items-center">
+      <VantaGlobe />
+      <div className="absolute inset-0 bg-gradient-to-b from-bg/20 via-bg/40 to-bg pointer-events-none z-[1]" />
 
-      <div className="relative max-w-5xl mx-auto px-6 pt-20 pb-28 sm:pt-28 sm:pb-32">
+      <div className="relative z-[2] w-full max-w-5xl mx-auto px-6 py-20">
         <div className="animate-fade-up">
           <div className="inline-flex items-center gap-2 text-xs font-mono text-mute mb-6 border border-line rounded-full px-3 py-1">
             <span className="h-1.5 w-1.5 rounded-full bg-emerald-400 animate-pulse" />
