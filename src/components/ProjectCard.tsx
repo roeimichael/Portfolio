@@ -5,7 +5,11 @@ import type { GhRepo } from "../hooks/useGithubRepos";
 
 export default function ProjectCard({ repo }: { repo: GhRepo }) {
   const override = repoOverrides[repo.repo] ?? {};
-  const { excerpt, loading } = useReadme(repo.owner, repo.repo);
+  const { excerpt, loading } = useReadme(
+    repo.owner,
+    repo.repo,
+    Boolean(override.description)
+  );
 
   const displayName = override.displayName ?? repo.repo;
   const description = override.description ?? excerpt ?? repo.description;

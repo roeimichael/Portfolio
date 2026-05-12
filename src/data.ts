@@ -10,14 +10,13 @@ export const featuredRepos: string[] = [
   "ContextAnalyzerTerminal",
   "cartographer",
   "claude-code-statusline",
-  "appscanner",
-  "israelle",
-  "hutishtuti",
+  "AppScanner",
+  "Israele",
+  "PokerOCR",
 ];
 
 export const repoOverrides: Record<string, RepoOverride> = {
-  hutishtuti: {
-    displayName: "PokerOCR",
+  PokerOCR: {
     tagline: "Omaha poker vision tool",
     description:
       "Reads cards from live online-poker screenshots across preflop, flop, turn and river, with calibration tools, color-based suit detection, and full Omaha game-state tracking.",
@@ -48,16 +47,14 @@ export const repoOverrides: Record<string, RepoOverride> = {
     image: "/projects/cartographer.jpg",
     tags: ["Python", "Claude Code", "Plugin"],
   },
-  israelle: {
-    displayName: "Israelle",
+  Israele: {
     tagline: "Wordle-style geo game (Israel edition)",
     description:
       "Five-round map game over ~3.3k Israeli places — cities, kibbutzim, mountains, archaeological sites — with English + Hebrew prompts, satellite map clicks, and a quadratic distance score modified by category multipliers.",
     image: "/projects/israelle.jpg",
     tags: ["Python", "FastAPI", "MapLibre"],
   },
-  appscanner: {
-    displayName: "AppScanner",
+  AppScanner: {
     tagline: "Real-time apartment listing aggregator",
     description:
       "Scans Yad2 and Onmap every 15 minutes for the Israeli rental market, ranks listings against your preferences, and pushes Telegram alerts with WhatsApp deep-links to the agent.",

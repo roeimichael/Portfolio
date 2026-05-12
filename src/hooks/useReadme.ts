@@ -37,10 +37,22 @@ async function fetchReadme(owner: string, repo: string): Promise<string | null> 
   return null;
 }
 
-export function useReadme(owner: string, repo: string): State {
-  const [state, setState] = useState<State>({ excerpt: null, loading: true });
+export function useReadme(
+  owner: string,
+  repo: string,
+  skip = false
+): State {
+  const [state, setState] = useState<State>({
+    excerpt: null,
+    loading: !skip,
+  });
 
   useEffect(() => {
+    if (skip) {
+      setState({ excerpt: null, loading: false });
+      return;
+    }
+
     const key = `${owner}/${repo}`;
     if (CACHE.has(key)) {
       setState({ excerpt: CACHE.get(key)!, loading: false });
@@ -65,7 +77,7 @@ export function useReadme(owner: string, repo: string): State {
     return () => {
       cancelled = true;
     };
-  }, [owner, repo]);
+  }, [owner, repo, skip]);
 
   return state;
 }
