@@ -11,7 +11,7 @@ export default function Hero() {
       <div className="relative z-[2] w-full max-w-5xl mx-auto px-6 py-20">
         <div className="animate-fade-up">
           <div className="inline-flex items-center gap-2 text-xs font-mono text-mute mb-6 border border-line rounded-full px-3 py-1">
-            <span className="h-1.5 w-1.5 rounded-full bg-emerald-400 animate-pulse" />
+            <span className="h-1.5 w-1.5 rounded-full bg-accent-soft animate-pulse" />
             Open to opportunities
           </div>
           <h1 className="text-4xl sm:text-6xl font-semibold tracking-tight leading-[1.05]">

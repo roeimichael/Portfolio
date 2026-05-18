@@ -19,7 +19,7 @@ body {
 }
 
 ::selection {
-  background: #7c5cff;
+  background: #3b82f6;
   color: #fff;
 }
 
@@ -32,7 +32,7 @@ body {
 .glow {
   background: radial-gradient(
     600px circle at 50% -10%,
-    rgba(124, 92, 255, 0.18),
+    rgba(59, 130, 246, 0.18),
     transparent 60%
   );
 }

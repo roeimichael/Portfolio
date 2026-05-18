@@ -9,11 +9,13 @@ export default {
       },
       colors: {
         bg: "#0a0a0a",
-        panel: "#111113",
-        line: "#1f1f23",
-        ink: "#e8e8ea",
-        mute: "#8b8b92",
-        accent: "#7c5cff",
+        panel: "#0f1217",
+        line: "#1c232e",
+        ink: "#e8ecf3",
+        mute: "#8693a8",
+        accent: "#3b82f6",
+        "accent-soft": "#60a5fa",
+        "accent-deep": "#1e3a8a",
       },
       animation: {
         "fade-up": "fadeUp 0.6s ease-out both",

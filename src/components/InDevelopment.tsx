@@ -7,7 +7,7 @@ export default function InDevelopment() {
       <div className="max-w-5xl mx-auto px-6 py-20">
         <div className="mb-10">
           <h2 className="flex items-center gap-2 text-sm font-mono text-mute uppercase tracking-widest mb-3">
-            <span className="h-2 w-2 rounded-full bg-amber-400 animate-pulse" />
+            <span className="h-2 w-2 rounded-full bg-accent-soft animate-pulse" />
             Currently in Development
           </h2>
           <p className="text-2xl sm:text-3xl font-semibold tracking-tight max-w-2xl">
@@ -22,7 +22,7 @@ export default function InDevelopment() {
               href={p.url}
               target="_blank"
               rel="noreferrer"
-              className="group relative flex flex-col md:flex-row rounded-2xl border border-line bg-panel/50 overflow-hidden hover:border-accent/60 hover:bg-panel/80 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_8px_40px_-12px_rgba(124,92,255,0.35)]"
+              className="group relative flex flex-col md:flex-row rounded-2xl border border-line bg-panel/50 overflow-hidden hover:border-accent/60 hover:bg-panel/80 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_8px_40px_-12px_rgba(59,130,246,0.35)]"
             >
               <div className="relative md:w-2/5 aspect-[16/9] md:aspect-auto overflow-hidden bg-black/60">
                 <img
@@ -41,7 +41,7 @@ export default function InDevelopment() {
                       <h3 className="text-xl font-semibold tracking-tight leading-tight">
                         {p.name}
                       </h3>
-                      <span className="inline-flex items-center gap-1 rounded-md border border-amber-400/30 bg-amber-400/10 px-2 py-0.5 text-[10px] font-mono text-amber-300/90 uppercase">
+                      <span className="inline-flex items-center gap-1 rounded-md border border-accent-soft/30 bg-accent-soft/10 px-2 py-0.5 text-[10px] font-mono text-accent-soft uppercase">
                         <Lock className="h-3 w-3" />
                         Private
                       </span>
@@ -57,7 +57,7 @@ export default function InDevelopment() {
                       e.stopPropagation();
                       window.open(p.url, "_blank", "noopener,noreferrer");
                     }}
-                    className="shrink-0 inline-flex items-center gap-1.5 rounded-full bg-emerald-500 px-3 py-1.5 text-xs font-semibold text-white shadow-lg shadow-emerald-500/30 hover:bg-emerald-400 transition-colors"
+                    className="shrink-0 inline-flex items-center gap-1.5 rounded-full bg-accent px-3 py-1.5 text-xs font-semibold text-white shadow-lg shadow-accent/40 hover:bg-accent-soft transition-colors"
                   >
                     <span className="h-1.5 w-1.5 rounded-full bg-white animate-pulse" />
                     Live Site

@@ -21,7 +21,7 @@ export default function ProjectCard({ repo }: { repo: GhRepo }) {
       href={repo.link}
       target="_blank"
       rel="noreferrer"
-      className="group relative flex flex-col rounded-2xl border border-line bg-panel/50 overflow-hidden hover:border-accent/60 hover:bg-panel/80 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_8px_40px_-12px_rgba(124,92,255,0.35)]"
+      className="group relative flex flex-col rounded-2xl border border-line bg-panel/50 overflow-hidden hover:border-accent/60 hover:bg-panel/80 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_8px_40px_-12px_rgba(59,130,246,0.35)]"
     >
       {override.image && (
         <div className="relative aspect-[16/9] w-full overflow-hidden bg-black/60">
@@ -40,7 +40,7 @@ export default function ProjectCard({ repo }: { repo: GhRepo }) {
                 e.stopPropagation();
                 window.open(override.liveUrl, "_blank", "noopener,noreferrer");
               }}
-              className="absolute top-3 right-3 inline-flex items-center gap-1.5 rounded-full bg-emerald-500 px-3 py-1.5 text-xs font-semibold text-white shadow-lg shadow-emerald-500/30 hover:bg-emerald-400 transition-colors"
+              className="absolute top-3 right-3 inline-flex items-center gap-1.5 rounded-full bg-accent px-3 py-1.5 text-xs font-semibold text-white shadow-lg shadow-accent/40 hover:bg-accent-soft transition-colors"
             >
               <span className="h-1.5 w-1.5 rounded-full bg-white animate-pulse" />
               Live Site
