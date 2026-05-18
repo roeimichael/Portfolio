@@ -4,14 +4,15 @@ export type RepoOverride = {
   description?: string;
   image?: string;
   tags?: string[];
+  liveUrl?: string;
 };
 
 export const featuredRepos: string[] = [
-  "ContextAnalyzerTerminal",
-  "cartographer",
-  "claude-code-statusline",
-  "AppScanner",
   "Israele",
+  "AppScanner",
+  "cartographer",
+  "ContextAnalyzerTerminal",
+  "claude-code-statusline",
   "PokerOCR",
 ];
 
@@ -53,6 +54,7 @@ export const repoOverrides: Record<string, RepoOverride> = {
       "Five-round map game over ~3.3k Israeli places — cities, kibbutzim, mountains, archaeological sites — with English + Hebrew prompts, satellite map clicks, and a quadratic distance score modified by category multipliers.",
     image: "/projects/israelle.jpg",
     tags: ["Python", "FastAPI", "MapLibre"],
+    liveUrl: "https://www.israel-e.com/",
   },
   AppScanner: {
     tagline: "Real-time apartment listing aggregator",
@@ -60,6 +62,7 @@ export const repoOverrides: Record<string, RepoOverride> = {
       "Scans Yad2 and Onmap every 15 minutes for the Israeli rental market, ranks listings against your preferences, and pushes Telegram alerts with WhatsApp deep-links to the agent.",
     image: "/projects/appscanner.jpg",
     tags: ["Next.js", "Telegram", "Scraping"],
+    liveUrl: "https://appscanner-liart.vercel.app/",
   },
 };
 
@@ -86,4 +89,129 @@ export const expertise: string[] = [
   "Software Engineering",
   "Bioinformatics",
   "Risk Management",
+];
+
+export const aboutBio = [
+  "Data Scientist and Data Engineer with deep experience in machine learning and algorithmic trading research. Currently completing my M.Sc. in Data Engineering at Bar-Ilan, with a thesis on neural network optimization under multi-constraint learning applied to stock market data.",
+  "Tech-Lead background with a strong Python foundation and end-to-end ownership of ML pipelines — from market data ingestion and back-testing frameworks to DNN-driven strategy execution and portfolio construction with risk constraints.",
+];
+
+export type Experience = {
+  role: string;
+  org: string;
+  period: string;
+  bullets: string[];
+};
+
+export const experience: Experience[] = [
+  {
+    role: "Software Developer",
+    org: "Israeli Navy (IDF)",
+    period: "2023 — 2026",
+    bullets: [
+      "Built backend architecture for operational mapping systems serving hundreds of Navy users.",
+      "Reduced data retrieval time by 20% through architecture optimization.",
+    ],
+  },
+  {
+    role: "Quant Developer",
+    org: "Odysseus Hedge Fund",
+    period: "2021 — 2023",
+    bullets: [
+      "Developed an automated trading engine driving a large portion of the fund's portfolio allocation.",
+      "Wrote high-performance correlation and cointegration algorithms across stock pairs for hedging strategies.",
+    ],
+  },
+  {
+    role: "Independent Quantitative Research",
+    org: "Self-directed",
+    period: "2023 — Present",
+    bullets: [
+      "Building an algorithmic trading system and back-testing framework over 10+ years of S&P 500 data.",
+      "Designing DNNs for market prediction and portfolio algorithms with risk constraints.",
+    ],
+  },
+];
+
+export type Education = {
+  degree: string;
+  school: string;
+  period: string;
+  notes: string[];
+};
+
+export const education: Education[] = [
+  {
+    degree: "M.Sc. in Data Engineering",
+    school: "Bar-Ilan University",
+    period: "2024 — Present",
+    notes: [
+      "Thesis: Neural network optimization with multi-constraint learning on stock market data.",
+      "Focus: Deep Learning, Optimization Theory, Multimodal Neural Networks.",
+      "GPA: 96",
+    ],
+  },
+  {
+    degree: "B.Sc. in Computer Engineering",
+    school: "Bar-Ilan University",
+    period: "2019 — 2023",
+    notes: [
+      "Graduated with Honors. GPA: 91.",
+      "\"100's Club\" Scholarship awarded twice for academic excellence.",
+    ],
+  },
+];
+
+export type SkillGroup = { label: string; items: string[] };
+
+export const skillGroups: SkillGroup[] = [
+  {
+    label: "Core",
+    items: ["Python (Expert)", "Git", "Linux"],
+  },
+  {
+    label: "ML / Deep Learning",
+    items: ["PyTorch", "Scikit-learn", "CUDA", "Multimodal NNs"],
+  },
+  {
+    label: "Data",
+    items: ["Pandas", "NumPy", "SciPy", "Matplotlib / Seaborn"],
+  },
+  {
+    label: "Quant",
+    items: [
+      "Back-testing Frameworks",
+      "Time Series Analysis",
+      "Portfolio Optimization",
+    ],
+  },
+  {
+    label: "Infra",
+    items: [
+      "Docker",
+      "Jenkins",
+      "Multiprocessing & Multithreading",
+    ],
+  },
+];
+
+export type DevProject = {
+  name: string;
+  tagline: string;
+  description: string;
+  url: string;
+  image: string;
+  tags: string[];
+};
+
+export const inDevelopment: DevProject[] = [
+  {
+    name: "Huginn Trading",
+    tagline: "Algorithmic trading platform — backtest & monitor strategies",
+    description:
+      "End-to-end platform for designing, back-testing, and monitoring algorithmic trading strategies on equities. Private repo (proprietary trading logic), live at huginntrading.com.",
+    url: "https://huginntrading.com",
+    image: "https://huginntrading.com/og-image.png",
+    tags: ["React", "TypeScript", "Python", "Quant"],
+  },
 ];

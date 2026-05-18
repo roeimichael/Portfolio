@@ -1,4 +1,4 @@
-import { ArrowUpRight, Star, GitFork } from "lucide-react";
+import { ArrowUpRight, Star, GitFork, ExternalLink } from "lucide-react";
 import { useReadme } from "../hooks/useReadme";
 import { repoOverrides } from "../data";
 import type { GhRepo } from "../hooks/useGithubRepos";
@@ -32,9 +32,26 @@ export default function ProjectCard({ repo }: { repo: GhRepo }) {
             className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.04]"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-panel via-panel/20 to-transparent pointer-events-none" />
-          <div className="absolute top-3 right-3 flex h-8 w-8 items-center justify-center rounded-full bg-bg/70 backdrop-blur border border-line/80 opacity-0 group-hover:opacity-100 transition-opacity">
-            <ArrowUpRight className="h-4 w-4 text-ink" />
-          </div>
+          {override.liveUrl && (
+            <button
+              type="button"
+              onClick={(e) => {
+                e.preventDefault();
+                e.stopPropagation();
+                window.open(override.liveUrl, "_blank", "noopener,noreferrer");
+              }}
+              className="absolute top-3 right-3 inline-flex items-center gap-1.5 rounded-full bg-emerald-500 px-3 py-1.5 text-xs font-semibold text-white shadow-lg shadow-emerald-500/30 hover:bg-emerald-400 transition-colors"
+            >
+              <span className="h-1.5 w-1.5 rounded-full bg-white animate-pulse" />
+              Live Site
+              <ExternalLink className="h-3.5 w-3.5" />
+            </button>
+          )}
+          {!override.liveUrl && (
+            <div className="absolute top-3 right-3 flex h-8 w-8 items-center justify-center rounded-full bg-bg/70 backdrop-blur border border-line/80 opacity-0 group-hover:opacity-100 transition-opacity">
+              <ArrowUpRight className="h-4 w-4 text-ink" />
+            </div>
+          )}
         </div>
       )}
 

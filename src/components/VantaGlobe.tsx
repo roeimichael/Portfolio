@@ -21,10 +21,10 @@ export default function VantaGlobe() {
       minWidth: 200.0,
       scale: 1.0,
       scaleMobile: 1.0,
-      color: 0x7c5cff,
-      color2: 0x9d85ff,
-      size: 0.9,
-      backgroundColor: 0x0a0a0a,
+      color: 0xffffff,
+      color2: 0x4169e1,
+      size: 1.0,
+      backgroundColor: 0xe5e7eb,
     });
     return () => {
       effectRef.current?.destroy();
