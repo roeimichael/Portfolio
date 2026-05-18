@@ -40,34 +40,34 @@ export default function Hero() {
             </a>
           </div>
 
-          <div className="mt-10 flex flex-wrap items-center gap-x-6 gap-y-3 text-sm text-mute">
-            <span className="inline-flex items-center gap-2">
-              <MapPin className="h-4 w-4" />
+          <div className="mt-10 flex flex-wrap items-center gap-2.5 text-sm">
+            <span className="inline-flex items-center gap-2 rounded-full border border-line bg-panel/70 backdrop-blur px-3.5 py-1.5 text-mute">
+              <MapPin className="h-4 w-4 text-accent-soft" />
               {profile.location}
             </span>
             <a
               href={`mailto:${profile.email}`}
-              className="inline-flex items-center gap-2 hover:text-ink transition-colors"
+              className="group inline-flex items-center gap-2 rounded-full border border-line bg-panel/70 backdrop-blur px-3.5 py-1.5 text-ink/90 hover:border-accent/70 hover:bg-accent/10 hover:text-white transition-colors"
             >
-              <Mail className="h-4 w-4" />
+              <Mail className="h-4 w-4 text-accent-soft group-hover:text-white transition-colors" />
               {profile.email}
             </a>
             <a
               href={profile.github}
-              className="inline-flex items-center gap-2 hover:text-ink transition-colors"
               target="_blank"
               rel="noreferrer"
+              className="group inline-flex items-center gap-2 rounded-full border border-line bg-panel/70 backdrop-blur px-3.5 py-1.5 text-ink/90 hover:border-accent/70 hover:bg-accent/10 hover:text-white transition-colors"
             >
-              <Github className="h-4 w-4" />
+              <Github className="h-4 w-4 text-accent-soft group-hover:text-white transition-colors" />
               GitHub
             </a>
             <a
               href={profile.linkedin}
-              className="inline-flex items-center gap-2 hover:text-ink transition-colors"
               target="_blank"
               rel="noreferrer"
+              className="group inline-flex items-center gap-2 rounded-full border border-line bg-panel/70 backdrop-blur px-3.5 py-1.5 text-ink/90 hover:border-accent/70 hover:bg-accent/10 hover:text-white transition-colors"
             >
-              <Linkedin className="h-4 w-4" />
+              <Linkedin className="h-4 w-4 text-accent-soft group-hover:text-white transition-colors" />
               LinkedIn
             </a>
           </div>
