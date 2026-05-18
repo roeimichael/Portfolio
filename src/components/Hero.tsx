@@ -6,7 +6,7 @@ export default function Hero() {
   return (
     <section id="top" className="relative overflow-hidden min-h-[100svh] flex items-center">
       <VantaGlobe />
-      <div className="absolute inset-0 bg-gradient-to-b from-bg/20 via-bg/40 to-bg pointer-events-none z-[1]" />
+      <div className="absolute inset-0 bg-bg/40 pointer-events-none z-[1]" />
 
       <div className="relative z-[2] w-full max-w-5xl mx-auto px-6 py-20">
         <div className="animate-fade-up">
