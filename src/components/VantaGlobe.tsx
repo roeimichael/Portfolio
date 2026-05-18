@@ -24,7 +24,7 @@ export default function VantaGlobe() {
       color: 0xffffff,
       color2: 0x4169e1,
       size: 1.0,
-      backgroundColor: 0xe5e7eb,
+      backgroundColor: 0x0a0a0a,
     });
     return () => {
       effectRef.current?.destroy();
