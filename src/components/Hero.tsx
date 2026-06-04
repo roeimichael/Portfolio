@@ -1,4 +1,4 @@
-import { ArrowRight, Github, Linkedin, Mail, MapPin } from "lucide-react";
+import { ArrowRight, FileText, Github, Linkedin, Mail, MapPin } from "lucide-react";
 import { profile } from "../data";
 import VantaGlobe from "./VantaGlobe";
 
@@ -37,6 +37,15 @@ export default function Hero() {
               className="inline-flex items-center gap-2 rounded-full border border-line px-5 py-2.5 text-sm font-medium hover:border-mute transition-colors"
             >
               Get in touch
+            </a>
+            <a
+              href={profile.resume}
+              target="_blank"
+              rel="noreferrer"
+              className="group inline-flex items-center gap-2 rounded-full border border-line px-5 py-2.5 text-sm font-medium hover:border-accent/70 hover:text-white transition-colors"
+            >
+              <FileText className="h-4 w-4 text-accent-soft group-hover:text-white transition-colors" />
+              Résumé
             </a>
           </div>
 

@@ -101,16 +101,17 @@ export const featuredProjects: FeaturedProject[] = [
 
 export const profile = {
   name: "Roei Michael",
-  role: "Data Scientist & Backend Engineer",
+  role: "Data Engineer & Machine Learning Developer",
   tagline:
-    "Building high-performance systems at the intersection of data science, algorithmic trading, and scalable backend architecture.",
+    "Building high-performance backend architectures, automated data pipelines, and agentic AI systems — specialized in LLM technologies, RAG, and financial/portfolio optimization.",
   location: "Petah Tikva, Israel",
   education: "M.Sc. in Data Engineering",
   email: "roeym111@gmail.com",
   githubUser: "roeimichael",
   github: "https://github.com/roeimichael",
-  linkedin: "https://www.linkedin.com/",
-  resume: "/Roei_Michael_Resume.pdf",
+  linkedin: "https://www.linkedin.com/in/roei-michael",
+  resume: "/docs/Roei_Michael_Resume.pdf",
+  transcript: "/docs/Roei_Michael_Transcript.pdf",
 };
 
 export const expertise: string[] = [
@@ -125,8 +126,9 @@ export const expertise: string[] = [
 ];
 
 export const aboutBio = [
-  "Data Scientist and Data Engineer with deep experience in machine learning and algorithmic trading research. Currently completing my M.Sc. in Data Engineering at Bar-Ilan, with a thesis on neural network optimization under multi-constraint learning applied to stock market data.",
-  "Tech-Lead background with a strong Python foundation and end-to-end ownership of ML pipelines — from market data ingestion and back-testing frameworks to DNN-driven strategy execution and portfolio construction with risk constraints.",
+  "Data Engineer and Machine Learning Developer with a proven record of building high-performance backend architectures, automated data pipelines, and personal agent systems. Specialized in LLM technologies, RAG pipelines, and financial/portfolio optimization.",
+  "Currently leading AI development at Expose Global — shipping multimodal agents, ingestion pipelines, and a custom RAG engine — while completing my M.Sc. in Data Engineering at Bar-Ilan, with core research in deep learning optimization under multi-constraint learning on stock market data.",
+  "Strong Python foundation with end-to-end ownership of ML and data pipelines, backed by a quant and military-systems background: from market-data ingestion and back-testing frameworks to DNN-driven strategy execution and operational mapping systems serving hundreds of users.",
 ];
 
 export type Experience = {
@@ -138,11 +140,21 @@ export type Experience = {
 
 export const experience: Experience[] = [
   {
+    role: "Lead AI Developer",
+    org: "Expose Global",
+    period: "2026 — Present",
+    bullets: [
+      "Exi AI Agent: deployed a multimodal agent system orchestrating automated user assistance, target-audience analysis, and social analytics pipelines.",
+      "Data Pipelines: built automated scraping and ingestion pipelines for daily trend harvesting and weekly analytics syncing across multiple platforms.",
+      "RAG Engine: implemented a vector pipeline using Google embeddings, dual-stage chunking with tagging, and a custom relevance-based caching mechanism to minimize database overhead.",
+    ],
+  },
+  {
     role: "Software Developer",
     org: "Israeli Navy (IDF)",
     period: "2023 — 2026",
     bullets: [
-      "Built backend architecture for operational mapping systems serving hundreds of Navy users.",
+      "Developed backend architecture for operational mapping systems serving hundreds of Navy users.",
       "Reduced data retrieval time by 20% through architecture optimization.",
     ],
   },
@@ -151,17 +163,8 @@ export const experience: Experience[] = [
     org: "Odysseus Hedge Fund",
     period: "2021 — 2023",
     bullets: [
-      "Developed an automated trading engine driving a large portion of the fund's portfolio allocation.",
+      "Developed an automated trading engine driving a large portion of the fund's portfolio position allocation.",
       "Wrote high-performance correlation and cointegration algorithms across stock pairs for hedging strategies.",
-    ],
-  },
-  {
-    role: "Independent Quantitative Research",
-    org: "Self-directed",
-    period: "2023 — Present",
-    bullets: [
-      "Building an algorithmic trading system and back-testing framework over 10+ years of S&P 500 data.",
-      "Designing DNNs for market prediction and portfolio algorithms with risk constraints.",
     ],
   },
 ];
@@ -170,6 +173,7 @@ export type Education = {
   degree: string;
   school: string;
   period: string;
+  gpa: string;
   notes: string[];
 };
 
@@ -178,18 +182,19 @@ export const education: Education[] = [
     degree: "M.Sc. in Data Engineering",
     school: "Bar-Ilan University",
     period: "2024 — Present",
+    gpa: "96 / 100",
     notes: [
       "Thesis: Neural network optimization with multi-constraint learning on stock market data.",
       "Focus: Deep Learning, Optimization Theory, Multimodal Neural Networks.",
-      "GPA: 96",
     ],
   },
   {
     degree: "B.Sc. in Computer Engineering",
     school: "Bar-Ilan University",
     period: "2019 — 2023",
+    gpa: "91 / 100",
     notes: [
-      "Graduated with Honors. GPA: 91.",
+      "Graduated with Honors.",
       "\"100's Club\" Scholarship awarded twice for academic excellence.",
     ],
   },
@@ -199,32 +204,75 @@ export type SkillGroup = { label: string; items: string[] };
 
 export const skillGroups: SkillGroup[] = [
   {
-    label: "Core",
-    items: ["Python (Expert)", "Git", "Linux"],
+    label: "AI / LLM",
+    items: [
+      "Multi-Agent Systems",
+      "Agentic Workflows",
+      "RAG Pipelines",
+      "Vector Embeddings",
+      "LLM Orchestration",
+      "Prompt Engineering",
+      "Semantic Chunking & Tagging",
+      "Google Embeddings",
+    ],
   },
   {
     label: "ML / Deep Learning",
-    items: ["PyTorch", "Scikit-learn", "CUDA", "Multimodal NNs"],
+    items: [
+      "PyTorch",
+      "Deep Learning",
+      "Scikit-learn",
+      "CUDA",
+      "Computer Vision Pipelines",
+      "Multimodal NNs",
+    ],
   },
   {
     label: "Data",
-    items: ["Pandas", "NumPy", "SciPy", "Matplotlib / Seaborn"],
+    items: [
+      "Pandas",
+      "NumPy",
+      "SciPy",
+      "Data Ingestion Pipelines",
+      "Time Series Analysis",
+      "Matplotlib / Seaborn",
+    ],
   },
   {
     label: "Quant",
     items: [
       "Back-testing Frameworks",
-      "Time Series Analysis",
       "Portfolio Optimization",
+      "Correlation & Cointegration",
     ],
   },
   {
-    label: "Infra",
+    label: "Core / Infra",
     items: [
+      "Python (Expert)",
+      "Git",
+      "Linux",
       "Docker",
       "Jenkins",
       "Multiprocessing & Multithreading",
+      "Supabase",
+      "Railway",
+      "Vercel",
     ],
+  },
+];
+
+export type Volunteer = { role: string; description: string };
+
+export const volunteering: Volunteer[] = [
+  {
+    role: "Math Tutor",
+    description: "Tutored high-school students in Israel's periphery.",
+  },
+  {
+    role: "Student Mentor",
+    description:
+      "Mentored freshmen through the university's “Soft Landing” integration program.",
   },
 ];
 

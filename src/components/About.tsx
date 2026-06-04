@@ -1,5 +1,12 @@
-import { Briefcase, GraduationCap, Sparkles } from "lucide-react";
-import { aboutBio, experience, education, skillGroups } from "../data";
+import { Briefcase, GraduationCap, Sparkles, Heart, FileText } from "lucide-react";
+import {
+  aboutBio,
+  experience,
+  education,
+  skillGroups,
+  volunteering,
+  profile,
+} from "../data";
 
 export default function About() {
   return (
@@ -78,6 +85,11 @@ export default function About() {
                         {ed.period}
                       </span>
                     </div>
+                    <div className="mt-2">
+                      <span className="inline-flex items-center gap-1.5 rounded-md border border-accent/30 bg-accent/10 px-2.5 py-1 text-xs font-mono text-accent">
+                        GPA {ed.gpa}
+                      </span>
+                    </div>
                     <ul className="mt-2 space-y-1 text-sm text-ink/80 leading-relaxed">
                       {ed.notes.map((n, i) => (
                         <li key={i}>— {n}</li>
@@ -86,6 +98,15 @@ export default function About() {
                   </li>
                 ))}
               </ol>
+              <a
+                href={profile.transcript}
+                target="_blank"
+                rel="noreferrer"
+                className="group mt-5 inline-flex items-center gap-2 rounded-full border border-line bg-panel/60 px-3.5 py-1.5 text-xs font-mono text-ink/85 hover:border-accent/70 hover:text-white transition-colors"
+              >
+                <FileText className="h-3.5 w-3.5 text-accent group-hover:text-white transition-colors" />
+                View grades transcript
+              </a>
             </div>
 
             <div>
@@ -112,6 +133,25 @@ export default function About() {
                   </div>
                 ))}
               </div>
+            </div>
+
+            <div>
+              <h3 className="flex items-center gap-2 text-xs font-mono text-mute uppercase tracking-widest mb-5">
+                <Heart className="h-3.5 w-3.5" />
+                Volunteering
+              </h3>
+              <ul className="space-y-3 text-sm text-ink/80 leading-relaxed">
+                {volunteering.map((v) => (
+                  <li
+                    key={v.role}
+                    className="relative pl-5 border-l border-line/80"
+                  >
+                    <span className="absolute -left-[5px] top-1.5 h-2.5 w-2.5 rounded-full bg-accent" />
+                    <span className="font-medium text-ink">{v.role}</span>
+                    <span className="text-mute"> — {v.description}</span>
+                  </li>
+                ))}
+              </ul>
             </div>
           </div>
         </div>
