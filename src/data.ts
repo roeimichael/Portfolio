@@ -107,6 +107,7 @@ export const profile = {
   location: "Petah Tikva, Israel",
   education: "M.Sc. in Data Engineering",
   email: "roeym111@gmail.com",
+  phone: "+972-54-7304570",
   githubUser: "roeimichael",
   github: "https://github.com/roeimichael",
   linkedin: "https://www.linkedin.com/in/roei-michael",
