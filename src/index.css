@@ -36,3 +36,74 @@ body {
     transparent 60%
   );
 }
+
+/* ============================================================
+   /animated — samurai journey scene
+   Placeholder art + animations. Swap SVG samurai for a real
+   sprite sheet and wire GSAP/Lenis later; the scroll→progress
+   plumbing in AnimatedJourney.tsx stays the same.
+   ============================================================ */
+
+/* whole running figure: vertical bob + slight lean wobble */
+@keyframes samuraiBob {
+  0%, 100% { transform: translateY(0) rotate(-1.5deg); }
+  50%      { transform: translateY(-9px) rotate(1.5deg); }
+}
+/* alternating leg swing — origin pinned at the hip (top of rect) */
+@keyframes legFront {
+  0%, 100% { transform: rotate(24deg); }
+  50%      { transform: rotate(-28deg); }
+}
+@keyframes legBack {
+  0%, 100% { transform: rotate(-28deg); }
+  50%      { transform: rotate(24deg); }
+}
+.samurai-fig { animation: samuraiBob 0.55s ease-in-out infinite; }
+.leg-front   { animation: legFront 0.55s ease-in-out infinite; transform-box: fill-box; transform-origin: 50% 8%; }
+.leg-back    { animation: legBack  0.55s ease-in-out infinite; transform-box: fill-box; transform-origin: 50% 8%; }
+
+/* dust kicked up behind the feet */
+@keyframes dustPuff {
+  0%   { transform: translate(0,0) scale(0.4); opacity: 0.5; }
+  100% { transform: translate(46px,-6px) scale(1.5); opacity: 0; }
+}
+.dust { animation: dustPuff 0.7s ease-out infinite; }
+
+/* cherry blossom petals drifting across the foreground */
+@keyframes petalFall {
+  0%   { transform: translate(0, -12vh) rotate(0deg); opacity: 0; }
+  12%  { opacity: 0.9; }
+  100% { transform: translate(-14vw, 112vh) rotate(460deg); opacity: 0; }
+}
+.petal { animation-name: petalFall; animation-timing-function: linear; animation-iteration-count: infinite; }
+
+/* station window pops in when the samurai reaches it */
+@keyframes stationIn {
+  0%   { opacity: 0; transform: translateY(22px) scale(0.95); }
+  100% { opacity: 1; transform: translateY(0) scale(1); }
+}
+.station-in { animation: stationIn 0.5s cubic-bezier(0.2, 0.8, 0.2, 1) both; }
+
+/* NPC dossier parchment unrolling open (the rods roll apart as it expands) */
+@keyframes scrollUnroll {
+  0%   { transform: scaleY(0.04); opacity: 0; }
+  55%  { opacity: 1; }
+  100% { transform: scaleY(1); opacity: 1; }
+}
+.scroll-open { animation: scrollUnroll 0.5s cubic-bezier(0.2, 0.85, 0.25, 1) both; transform-origin: center; }
+/* content fades in only after the parchment has mostly opened (hides the squash) */
+@keyframes scrollContentIn { 0%, 50% { opacity: 0; } 100% { opacity: 1; } }
+.scroll-content { animation: scrollContentIn 0.6s ease both; }
+
+/* scroll-down hint nudge */
+@keyframes hintBounce {
+  0%, 100% { transform: translateY(0); opacity: 0.55; }
+  50%      { transform: translateY(7px); opacity: 1; }
+}
+.hint-bounce { animation: hintBounce 1.4s ease-in-out infinite; }
+
+@media (prefers-reduced-motion: reduce) {
+  .samurai-fig, .leg-front, .leg-back, .dust, .petal, .hint-bounce {
+    animation: none !important;
+  }
+}

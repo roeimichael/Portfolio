@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>/animated — model review</title>
+<style>
+  :root { --gold:#e8b15a; --red:#d2553f; --bg:#141a12; --paper:#f4ecd8; }
+  * { box-sizing: border-box; }
+  body { margin:0; font-family: ui-monospace, "SF Mono", Menlo, monospace; background:#0d120c; color:var(--paper); }
+  header { position:sticky; top:0; z-index:10; background:rgba(13,18,12,0.95); border-bottom:1px solid rgba(232,177,90,0.3); backdrop-filter:blur(6px); padding:14px 22px; }
+  h1 { margin:0 0 4px; font-size:18px; color:#fff; }
+  .sub { font-size:12px; color:rgba(244,236,216,0.6); line-height:1.5; max-width:760px; }
+  .bar { margin-top:10px; display:flex; gap:10px; align-items:center; flex-wrap:wrap; }
+  button { font-family:inherit; cursor:pointer; border:none; border-radius:8px; padding:8px 16px; font-size:13px; font-weight:600; transition:filter .15s; }
+  button:hover { filter:brightness(1.1); }
+  .save { background:var(--red); color:#fff; }
+  .reset { background:rgba(244,236,216,0.12); color:var(--paper); }
+  .count { font-size:12px; color:rgba(244,236,216,0.7); margin-left:auto; }
+  .count b { color:var(--gold); }
+  main { padding:18px 22px 80px; }
+  h2 { font-size:13px; text-transform:uppercase; letter-spacing:.2em; color:var(--gold); margin:26px 0 12px; border-bottom:1px solid rgba(232,177,90,0.18); padding-bottom:6px; }
+  .grid { display:flex; flex-wrap:wrap; gap:14px; }
+  .card { width:140px; height:150px; perspective:800px; cursor:pointer; }
+  .inner { position:relative; width:100%; height:100%; transition:transform .45s cubic-bezier(.2,.8,.3,1); transform-style:preserve-3d; }
+  .card.removed .inner { transform:rotateY(180deg); }
+  .face { position:absolute; inset:0; backface-visibility:hidden; border-radius:10px; display:flex; flex-direction:column; align-items:center; justify-content:space-between; padding:8px; overflow:hidden; }
+  .front { background:linear-gradient(180deg,#1b2417,#10160f); border:2px solid var(--gold); box-shadow:0 4px 14px rgba(0,0,0,.4); }
+  .back { background:linear-gradient(180deg,#3a1614,#220c0b); border:2px solid var(--red); transform:rotateY(180deg); align-items:center; justify-content:center; gap:8px; }
+  .thumb { width:120px; height:96px; image-rendering:pixelated; background-repeat:no-repeat; }
+  .thumb img { max-width:120px; max-height:96px; image-rendering:pixelated; display:block; margin:auto; }
+  .name { font-size:11px; color:var(--paper); text-align:center; width:100%; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+  .note { font-size:9px; color:var(--gold); text-align:center; line-height:1.2; max-height:22px; overflow:hidden; }
+  .card { height:166px; }
+  .tag { position:absolute; top:6px; right:6px; font-size:10px; background:rgba(40,200,100,.85); color:#06210f; padding:1px 6px; border-radius:6px; font-weight:700; }
+  .back .x { font-size:30px; color:var(--red); }
+  .back .lbl { font-size:11px; color:rgba(244,236,216,.75); text-transform:uppercase; letter-spacing:.15em; }
+  .back .nm { font-size:11px; color:rgba(244,236,216,.55); }
+  .err { color:var(--red); font-size:13px; padding:14px 0; }
+</style>
+</head>
+<body>
+<header>
+  <h1>/animated — model review</h1>
+  <div class="sub">
+    Click a card to <b>flip</b> it: <span style="color:var(--gold)">face up = KEEP</span>, flipped = <span style="color:var(--red)">REMOVE</span>.
+    Toggle everything you don't want, then hit <b>Save</b> — it downloads <code>model-selections.json</code> (and embeds your choices in this page). Tell me when it's saved and I'll prune the rosters.
+  </div>
+  <div class="bar">
+    <button class="save" onclick="save()">💾 Save selections</button>
+    <button class="reset" onclick="resetAll()">Reset (keep all)</button>
+    <span class="count" id="count"></span>
+  </div>
+</header>
+<main id="main"><div class="err" id="loading">Loading sprites… (open this via the dev server: <code>npm run dev</code> → <code>/model-review.html</code>)</div></main>
+
+<!-- your saved choices get embedded here on Save so the HTML itself carries them -->
+<script id="selections-data" type="application/json"></script>
+
+<script>
+const state = {};   // { category: { id: true(keep)/false(remove) } }
+let CATS = [];
+
+async function getJSON(u){ const r = await fetch(u); if(!r.ok) throw new Error(u); return r.json(); }
+
+async function load() {
+  try {
+    const chars = await getJSON('/sprites/chars/manifest.json');
+    const mobs  = await getJSON('/sprites/mobs/manifest.json');
+    const pet   = await getJSON('/sprites/pet/manifest.json');
+    const npcs  = await getJSON('/sprites/npcs/manifest.json');
+    CATS = [
+      { key:'characters', label:'Characters (playable heroes)', items:
+        chars.order.map(id => ({ id, name: chars.chars[id].name || id, src:`/sprites/chars/${id}/idle.png`, fw:chars.chars[id].frameW, fh:chars.chars[id].frameH, bbox:chars.chars[id].bbox })) },
+      { key:'mobs', label:'Mobs (enemies)', items:
+        Object.keys(mobs).map(id => ({ id, name:id, src:`/sprites/mobs/${id}/idle.png`, fw:mobs[id].frameW, fh:mobs[id].frameH, bbox:mobs[id].bbox })) },
+      { key:'pets', label:'Pets / companions', items:
+        Object.keys(pet).map(id => ({ id, name:id, src:`/sprites/pet/${id}/idle.png`, fw:pet[id].frameW, fh:pet[id].frameH, bbox:pet[id].bbox })) },
+      { key:'npcs', label:'NPCs (station guides)', items:
+        npcs.order.map(id => ({ id, name:id, src:`/sprites/npcs/${id}/idle.png`, fw:npcs.npcs[id].frameW, fh:npcs.npcs[id].frameH, bbox:npcs.npcs[id].bbox })) },
+    ];
+    // props/scenery come from a generated manifest, grouped by source pack
+    const props = await getJSON('/sprites/props/manifest.json');
+    const groups = {};
+    props.items.forEach(it => { (groups[it.group] = groups[it.group] || []).push(it); });
+    Object.keys(groups).forEach(g => {
+      CATS.push({ key: 'prop:' + g, label: g, items:
+        groups[g].map(it => ({ id: it.name, name: it.name, note: it.note, src: '/sprites/props/' + it.file, plain: true })) });
+    });
+    // init state (default keep), restoring any prior choices from localStorage
+    const prev = JSON.parse(localStorage.getItem('modelSelections') || '{}');
+    CATS.forEach(c => { state[c.key] = {}; c.items.forEach(it => {
+      state[c.key][it.id] = (prev[c.key] && it.id in prev[c.key]) ? prev[c.key][it.id] : true; }); });
+    render();
+  } catch (e) {
+    document.getElementById('loading').textContent = 'Could not load sprites. Open this page through the dev server (npm run dev → http://localhost:5173/model-review.html), not as a file.';
+  }
+}
+
+function thumbStyle(it){
+  if (it.plain) return '';
+  const b = it.bbox, bw = Math.max(1,b.x1-b.x0), bh = Math.max(1,b.y1-b.y0);
+  const boxW=120, boxH=96, scale = Math.min(boxW/bw, boxH/bh);
+  const offX = (boxW - bw*scale)/2 - b.x0*scale, offY = (boxH - bh*scale)/2 - b.y0*scale;
+  return `background-image:url('${it.src}');background-size:auto ${it.fh*scale}px;background-position:${offX}px ${offY}px;`;
+}
+
+function render() {
+  const main = document.getElementById('main'); main.innerHTML = '';
+  CATS.forEach(c => {
+    const h = document.createElement('h2'); h.textContent = c.label; main.appendChild(h);
+    const g = document.createElement('div'); g.className = 'grid';
+    c.items.forEach(it => {
+      const card = document.createElement('div'); card.className = 'card' + (state[c.key][it.id] ? '' : ' removed');
+      const thumb = it.plain ? `<div class="thumb"><img src="${it.src}" alt="${it.name}"></div>` : `<div class="thumb" style="${thumbStyle(it)}"></div>`;
+      const note = it.note ? `<div class="note">⚠ ${it.note}</div>` : '';
+      card.innerHTML =
+        `<div class="inner">
+           <div class="face front"><span class="tag">KEEP</span>${thumb}<div class="name">${it.name}</div>${note}</div>
+           <div class="face back"><div class="x">✕</div><div class="lbl">Removed</div><div class="nm">${it.name}</div></div>
+         </div>`;
+      card.onclick = () => { state[c.key][it.id] = !state[c.key][it.id]; card.classList.toggle('removed'); persist(); };
+      g.appendChild(card);
+    });
+    main.appendChild(g);
+  });
+  persist();
+}
+
+function result() {
+  const remove = [];
+  for (const cat in state) for (const id in state[cat]) if (!state[cat][id]) remove.push(cat + '/' + id);
+  return { note: 'true = keep, false = remove', selections: state, remove };
+}
+function persist() {
+  localStorage.setItem('modelSelections', JSON.stringify(state));
+  document.getElementById('selections-data').textContent = JSON.stringify(result(), null, 2);
+  let kept=0, tot=0; for (const cat in state) for (const id in state[cat]) { tot++; if (state[cat][id]) kept++; }
+  document.getElementById('count').innerHTML = `<b>${kept}</b> kept / <b>${tot-kept}</b> removed`;
+}
+function save() {
+  persist();
+  const blob = new Blob([document.getElementById('selections-data').textContent], { type:'application/json' });
+  const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = 'model-selections.json'; a.click();
+}
+function resetAll(){ for (const cat in state) for (const id in state[cat]) state[cat][id] = true; render(); }
+
+load();
+</script>
+</body>
+</html>

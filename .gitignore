@@ -12,3 +12,9 @@ dist-ssr
 .env.local
 
 .vercel
+
+# /animated game — asset regeneration sources (compiled sprites live in public/sprites)
+.assettmp/
+src/animations/_chars/
+src/animations/*.zip
+src/animations/*.png

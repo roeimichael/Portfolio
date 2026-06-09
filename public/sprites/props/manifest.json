@@ -1,0 +1,1387 @@
+{
+  "items": [
+    {
+      "group": "Misc buildings & trees",
+      "name": "house_timber",
+      "file": "house_timber.png",
+      "w": 87,
+      "h": 169
+    },
+    {
+      "group": "Misc buildings & trees",
+      "name": "tree_round",
+      "file": "tree_round.png",
+      "w": 94,
+      "h": 93
+    },
+    {
+      "group": "Misc buildings & trees",
+      "name": "house_japanese",
+      "file": "house_japanese.png",
+      "w": 180,
+      "h": 125,
+      "note": "3/4 angle"
+    },
+    {
+      "group": "Trees",
+      "name": "tree_green_0",
+      "file": "tree_green_0.png",
+      "w": 53,
+      "h": 53
+    },
+    {
+      "group": "Trees",
+      "name": "tree_green_1",
+      "file": "tree_green_1.png",
+      "w": 54,
+      "h": 49
+    },
+    {
+      "group": "Trees",
+      "name": "tree_green_2",
+      "file": "tree_green_2.png",
+      "w": 53,
+      "h": 55
+    },
+    {
+      "group": "Trees",
+      "name": "tree_green_3",
+      "file": "tree_green_3.png",
+      "w": 56,
+      "h": 56
+    },
+    {
+      "group": "Trees",
+      "name": "tree_autumn_0",
+      "file": "tree_autumn_0.png",
+      "w": 56,
+      "h": 56
+    },
+    {
+      "group": "Trees",
+      "name": "tree_autumn_1",
+      "file": "tree_autumn_1.png",
+      "w": 50,
+      "h": 55
+    },
+    {
+      "group": "Trees",
+      "name": "tree_autumn_2",
+      "file": "tree_autumn_2.png",
+      "w": 56,
+      "h": 56
+    },
+    {
+      "group": "Trees",
+      "name": "tree_autumn_3",
+      "file": "tree_autumn_3.png",
+      "w": 54,
+      "h": 56
+    },
+    {
+      "group": "Trees",
+      "name": "tree_yellow_0",
+      "file": "tree_yellow_0.png",
+      "w": 47,
+      "h": 55
+    },
+    {
+      "group": "Trees",
+      "name": "tree_yellow_1",
+      "file": "tree_yellow_1.png",
+      "w": 56,
+      "h": 55
+    },
+    {
+      "group": "Trees",
+      "name": "tree_yellow_2",
+      "file": "tree_yellow_2.png",
+      "w": 48,
+      "h": 56
+    },
+    {
+      "group": "Trees",
+      "name": "tree_yellow_3",
+      "file": "tree_yellow_3.png",
+      "w": 53,
+      "h": 55
+    },
+    {
+      "group": "Trees",
+      "name": "tree_sakura_0",
+      "file": "tree_sakura_0.png",
+      "w": 52,
+      "h": 54
+    },
+    {
+      "group": "Trees",
+      "name": "tree_sakura_1",
+      "file": "tree_sakura_1.png",
+      "w": 54,
+      "h": 56
+    },
+    {
+      "group": "Trees",
+      "name": "tree_sakura_2",
+      "file": "tree_sakura_2.png",
+      "w": 46,
+      "h": 56
+    },
+    {
+      "group": "Trees",
+      "name": "tree_sakura_3",
+      "file": "tree_sakura_3.png",
+      "w": 56,
+      "h": 56
+    },
+    {
+      "group": "Cainos village props",
+      "name": "cainos_0",
+      "file": "cainos_0.png",
+      "w": 153,
+      "h": 162
+    },
+    {
+      "group": "Cainos village props",
+      "name": "cainos_1",
+      "file": "cainos_1.png",
+      "w": 120,
+      "h": 138
+    },
+    {
+      "group": "Cainos village props",
+      "name": "cainos_2",
+      "file": "cainos_2.png",
+      "w": 87,
+      "h": 91
+    },
+    {
+      "group": "Cainos village props",
+      "name": "cainos_3",
+      "file": "cainos_3.png",
+      "w": 136,
+      "h": 43
+    },
+    {
+      "group": "Cainos village props",
+      "name": "cainos_4",
+      "file": "cainos_4.png",
+      "w": 90,
+      "h": 49
+    },
+    {
+      "group": "Cainos village props",
+      "name": "cainos_5",
+      "file": "cainos_5.png",
+      "w": 92,
+      "h": 183
+    },
+    {
+      "group": "Cainos village props",
+      "name": "cainos_6",
+      "file": "cainos_6.png",
+      "w": 68,
+      "h": 61
+    },
+    {
+      "group": "Cainos village props",
+      "name": "cainos_7",
+      "file": "cainos_7.png",
+      "w": 85,
+      "h": 39
+    },
+    {
+      "group": "Cainos village props",
+      "name": "cainos_8",
+      "file": "cainos_8.png",
+      "w": 90,
+      "h": 28
+    },
+    {
+      "group": "Cainos village props",
+      "name": "cainos_9",
+      "file": "cainos_9.png",
+      "w": 95,
+      "h": 37
+    },
+    {
+      "group": "Cainos village props",
+      "name": "cainos_10",
+      "file": "cainos_10.png",
+      "w": 104,
+      "h": 59
+    },
+    {
+      "group": "Cainos village props",
+      "name": "cainos_11",
+      "file": "cainos_11.png",
+      "w": 45,
+      "h": 45
+    },
+    {
+      "group": "Cainos village props",
+      "name": "cainos_12",
+      "file": "cainos_12.png",
+      "w": 64,
+      "h": 90
+    },
+    {
+      "group": "Cainos village props",
+      "name": "cainos_13",
+      "file": "cainos_13.png",
+      "w": 85,
+      "h": 33
+    },
+    {
+      "group": "Cainos village props",
+      "name": "cainos_14",
+      "file": "cainos_14.png",
+      "w": 32,
+      "h": 96
+    },
+    {
+      "group": "Cainos village props",
+      "name": "cainos_15",
+      "file": "cainos_15.png",
+      "w": 126,
+      "h": 44
+    },
+    {
+      "group": "Cainos village props",
+      "name": "cainos_16",
+      "file": "cainos_16.png",
+      "w": 89,
+      "h": 36
+    },
+    {
+      "group": "Cainos village props",
+      "name": "cainos_17",
+      "file": "cainos_17.png",
+      "w": 96,
+      "h": 39
+    },
+    {
+      "group": "Cainos village props",
+      "name": "cainos_18",
+      "file": "cainos_18.png",
+      "w": 35,
+      "h": 77
+    },
+    {
+      "group": "Cainos village props",
+      "name": "cainos_19",
+      "file": "cainos_19.png",
+      "w": 62,
+      "h": 34
+    },
+    {
+      "group": "Cainos village props",
+      "name": "cainos_20",
+      "file": "cainos_20.png",
+      "w": 120,
+      "h": 44
+    },
+    {
+      "group": "Cainos village props",
+      "name": "cainos_21",
+      "file": "cainos_21.png",
+      "w": 28,
+      "h": 59
+    },
+    {
+      "group": "Cainos village props",
+      "name": "cainos_22",
+      "file": "cainos_22.png",
+      "w": 76,
+      "h": 44
+    },
+    {
+      "group": "Cainos village props",
+      "name": "cainos_23",
+      "file": "cainos_23.png",
+      "w": 94,
+      "h": 22
+    },
+    {
+      "group": "Cainos village props",
+      "name": "cainos_24",
+      "file": "cainos_24.png",
+      "w": 35,
+      "h": 35
+    },
+    {
+      "group": "Cainos village props",
+      "name": "cainos_25",
+      "file": "cainos_25.png",
+      "w": 57,
+      "h": 29
+    },
+    {
+      "group": "Cainos village props",
+      "name": "cainos_26",
+      "file": "cainos_26.png",
+      "w": 41,
+      "h": 29
+    },
+    {
+      "group": "Cainos village props",
+      "name": "cainos_27",
+      "file": "cainos_27.png",
+      "w": 47,
+      "h": 67
+    },
+    {
+      "group": "Cainos village props",
+      "name": "cainos_28",
+      "file": "cainos_28.png",
+      "w": 38,
+      "h": 44
+    },
+    {
+      "group": "Cainos village props",
+      "name": "cainos_29",
+      "file": "cainos_29.png",
+      "w": 28,
+      "h": 42
+    },
+    {
+      "group": "Cainos village props",
+      "name": "cainos_30",
+      "file": "cainos_30.png",
+      "w": 35,
+      "h": 47
+    },
+    {
+      "group": "Cainos village props",
+      "name": "cainos_31",
+      "file": "cainos_31.png",
+      "w": 62,
+      "h": 36
+    },
+    {
+      "group": "Cainos village props",
+      "name": "cainos_32",
+      "file": "cainos_32.png",
+      "w": 19,
+      "h": 129
+    },
+    {
+      "group": "Cainos village props",
+      "name": "cainos_33",
+      "file": "cainos_33.png",
+      "w": 19,
+      "h": 129
+    },
+    {
+      "group": "Cainos village props",
+      "name": "cainos_34",
+      "file": "cainos_34.png",
+      "w": 104,
+      "h": 26
+    },
+    {
+      "group": "Cainos village props",
+      "name": "cainos_35",
+      "file": "cainos_35.png",
+      "w": 35,
+      "h": 30
+    },
+    {
+      "group": "Cainos village props",
+      "name": "cainos_36",
+      "file": "cainos_36.png",
+      "w": 34,
+      "h": 30
+    },
+    {
+      "group": "Cainos village props",
+      "name": "cainos_37",
+      "file": "cainos_37.png",
+      "w": 35,
+      "h": 29
+    },
+    {
+      "group": "Cainos village props",
+      "name": "cainos_38",
+      "file": "cainos_38.png",
+      "w": 35,
+      "h": 29
+    },
+    {
+      "group": "Cainos village props",
+      "name": "cainos_39",
+      "file": "cainos_39.png",
+      "w": 45,
+      "h": 44
+    },
+    {
+      "group": "Cainos village props",
+      "name": "cainos_40",
+      "file": "cainos_40.png",
+      "w": 46,
+      "h": 26
+    },
+    {
+      "group": "Cainos village props",
+      "name": "cainos_41",
+      "file": "cainos_41.png",
+      "w": 68,
+      "h": 33
+    },
+    {
+      "group": "Cainos village props",
+      "name": "cainos_42",
+      "file": "cainos_42.png",
+      "w": 73,
+      "h": 28
+    },
+    {
+      "group": "Cainos village props",
+      "name": "cainos_43",
+      "file": "cainos_43.png",
+      "w": 32,
+      "h": 41
+    },
+    {
+      "group": "Cainos village props",
+      "name": "cainos_44",
+      "file": "cainos_44.png",
+      "w": 61,
+      "h": 23
+    },
+    {
+      "group": "Cainos village props",
+      "name": "cainos_45",
+      "file": "cainos_45.png",
+      "w": 27,
+      "h": 35
+    },
+    {
+      "group": "Cainos village props",
+      "name": "cainos_46",
+      "file": "cainos_46.png",
+      "w": 16,
+      "h": 97
+    },
+    {
+      "group": "Cainos village props",
+      "name": "cainos_47",
+      "file": "cainos_47.png",
+      "w": 64,
+      "h": 44
+    },
+    {
+      "group": "Cainos village props",
+      "name": "cainos_48",
+      "file": "cainos_48.png",
+      "w": 31,
+      "h": 34
+    },
+    {
+      "group": "Cainos village props",
+      "name": "cainos_49",
+      "file": "cainos_49.png",
+      "w": 32,
+      "h": 46
+    },
+    {
+      "group": "Cainos village props",
+      "name": "cainos_50",
+      "file": "cainos_50.png",
+      "w": 48,
+      "h": 28
+    },
+    {
+      "group": "Cainos village props",
+      "name": "cainos_51",
+      "file": "cainos_51.png",
+      "w": 29,
+      "h": 31
+    },
+    {
+      "group": "Cainos village props",
+      "name": "cainos_52",
+      "file": "cainos_52.png",
+      "w": 34,
+      "h": 25
+    },
+    {
+      "group": "Cainos village props",
+      "name": "cainos_53",
+      "file": "cainos_53.png",
+      "w": 32,
+      "h": 33
+    },
+    {
+      "group": "Cainos village props",
+      "name": "cainos_54",
+      "file": "cainos_54.png",
+      "w": 31,
+      "h": 27
+    },
+    {
+      "group": "Cainos village props",
+      "name": "cainos_55",
+      "file": "cainos_55.png",
+      "w": 39,
+      "h": 31
+    },
+    {
+      "group": "Cainos village props",
+      "name": "cainos_56",
+      "file": "cainos_56.png",
+      "w": 31,
+      "h": 53
+    },
+    {
+      "group": "Cainos village props",
+      "name": "cainos_57",
+      "file": "cainos_57.png",
+      "w": 32,
+      "h": 32
+    },
+    {
+      "group": "Cainos village props",
+      "name": "cainos_58",
+      "file": "cainos_58.png",
+      "w": 62,
+      "h": 39
+    },
+    {
+      "group": "Cainos village props",
+      "name": "cainos_59",
+      "file": "cainos_59.png",
+      "w": 26,
+      "h": 63
+    },
+    {
+      "group": "Cainos village props",
+      "name": "cainos_60",
+      "file": "cainos_60.png",
+      "w": 27,
+      "h": 43
+    },
+    {
+      "group": "Cainos village props",
+      "name": "cainos_61",
+      "file": "cainos_61.png",
+      "w": 30,
+      "h": 31
+    },
+    {
+      "group": "Cainos village props",
+      "name": "cainos_62",
+      "file": "cainos_62.png",
+      "w": 27,
+      "h": 59
+    },
+    {
+      "group": "Cainos village props",
+      "name": "cainos_63",
+      "file": "cainos_63.png",
+      "w": 32,
+      "h": 25
+    },
+    {
+      "group": "Cainos village props",
+      "name": "cainos_64",
+      "file": "cainos_64.png",
+      "w": 25,
+      "h": 34
+    },
+    {
+      "group": "Cainos village props",
+      "name": "cainos_65",
+      "file": "cainos_65.png",
+      "w": 27,
+      "h": 45
+    },
+    {
+      "group": "Cainos village props",
+      "name": "cainos_66",
+      "file": "cainos_66.png",
+      "w": 20,
+      "h": 87
+    },
+    {
+      "group": "Cainos village props",
+      "name": "cainos_67",
+      "file": "cainos_67.png",
+      "w": 22,
+      "h": 58
+    },
+    {
+      "group": "Cainos village props",
+      "name": "cainos_68",
+      "file": "cainos_68.png",
+      "w": 46,
+      "h": 89
+    },
+    {
+      "group": "Cainos village props",
+      "name": "cainos_69",
+      "file": "cainos_69.png",
+      "w": 40,
+      "h": 26
+    },
+    {
+      "group": "Cainos village props",
+      "name": "cainos_70",
+      "file": "cainos_70.png",
+      "w": 33,
+      "h": 19
+    },
+    {
+      "group": "Cainos village props",
+      "name": "cainos_71",
+      "file": "cainos_71.png",
+      "w": 27,
+      "h": 41
+    },
+    {
+      "group": "Cainos village props",
+      "name": "cainos_72",
+      "file": "cainos_72.png",
+      "w": 42,
+      "h": 20
+    },
+    {
+      "group": "Cainos village props",
+      "name": "cainos_73",
+      "file": "cainos_73.png",
+      "w": 62,
+      "h": 10
+    },
+    {
+      "group": "Cainos village props",
+      "name": "cainos_74",
+      "file": "cainos_74.png",
+      "w": 32,
+      "h": 17
+    },
+    {
+      "group": "Cainos village props",
+      "name": "cainos_75",
+      "file": "cainos_75.png",
+      "w": 19,
+      "h": 29
+    },
+    {
+      "group": "Cainos village props",
+      "name": "cainos_76",
+      "file": "cainos_76.png",
+      "w": 21,
+      "h": 25
+    },
+    {
+      "group": "Cainos village props",
+      "name": "cainos_77",
+      "file": "cainos_77.png",
+      "w": 28,
+      "h": 59
+    },
+    {
+      "group": "Cainos village props",
+      "name": "cainos_78",
+      "file": "cainos_78.png",
+      "w": 24,
+      "h": 57
+    },
+    {
+      "group": "Cainos village props",
+      "name": "cainos_79",
+      "file": "cainos_79.png",
+      "w": 34,
+      "h": 19
+    },
+    {
+      "group": "Cainos village props",
+      "name": "cainos_80",
+      "file": "cainos_80.png",
+      "w": 36,
+      "h": 26
+    },
+    {
+      "group": "Cainos village props",
+      "name": "cainos_81",
+      "file": "cainos_81.png",
+      "w": 36,
+      "h": 26
+    },
+    {
+      "group": "Cainos village props",
+      "name": "cainos_82",
+      "file": "cainos_82.png",
+      "w": 22,
+      "h": 36
+    },
+    {
+      "group": "Cainos village props",
+      "name": "cainos_83",
+      "file": "cainos_83.png",
+      "w": 10,
+      "h": 36
+    },
+    {
+      "group": "Cainos village props",
+      "name": "cainos_84",
+      "file": "cainos_84.png",
+      "w": 17,
+      "h": 29
+    },
+    {
+      "group": "Cainos village props",
+      "name": "cainos_85",
+      "file": "cainos_85.png",
+      "w": 21,
+      "h": 19
+    },
+    {
+      "group": "Cainos village props",
+      "name": "cainos_86",
+      "file": "cainos_86.png",
+      "w": 27,
+      "h": 27
+    },
+    {
+      "group": "Cainos village props",
+      "name": "cainos_87",
+      "file": "cainos_87.png",
+      "w": 17,
+      "h": 23
+    },
+    {
+      "group": "Cainos village props",
+      "name": "cainos_88",
+      "file": "cainos_88.png",
+      "w": 15,
+      "h": 25
+    },
+    {
+      "group": "Cainos village props",
+      "name": "cainos_89",
+      "file": "cainos_89.png",
+      "w": 33,
+      "h": 26
+    },
+    {
+      "group": "Grass & bushes",
+      "name": "grass_0",
+      "file": "grass_0.png",
+      "w": 56,
+      "h": 19
+    },
+    {
+      "group": "Grass & bushes",
+      "name": "grass_1",
+      "file": "grass_1.png",
+      "w": 27,
+      "h": 21
+    },
+    {
+      "group": "Grass & bushes",
+      "name": "grass_2",
+      "file": "grass_2.png",
+      "w": 26,
+      "h": 23
+    },
+    {
+      "group": "Grass & bushes",
+      "name": "grass_3",
+      "file": "grass_3.png",
+      "w": 27,
+      "h": 23
+    },
+    {
+      "group": "Grass & bushes",
+      "name": "grass_4",
+      "file": "grass_4.png",
+      "w": 20,
+      "h": 25
+    },
+    {
+      "group": "Grass & bushes",
+      "name": "grass_5",
+      "file": "grass_5.png",
+      "w": 24,
+      "h": 22
+    },
+    {
+      "group": "Grass & bushes",
+      "name": "grass_6",
+      "file": "grass_6.png",
+      "w": 21,
+      "h": 24
+    },
+    {
+      "group": "Grass & bushes",
+      "name": "grass_7",
+      "file": "grass_7.png",
+      "w": 27,
+      "h": 17
+    },
+    {
+      "group": "Grass & bushes",
+      "name": "grass_8",
+      "file": "grass_8.png",
+      "w": 18,
+      "h": 24
+    },
+    {
+      "group": "Grass & bushes",
+      "name": "grass_9",
+      "file": "grass_9.png",
+      "w": 15,
+      "h": 24
+    },
+    {
+      "group": "Grass & bushes",
+      "name": "grass_10",
+      "file": "grass_10.png",
+      "w": 25,
+      "h": 11
+    },
+    {
+      "group": "Grass & bushes",
+      "name": "grass_11",
+      "file": "grass_11.png",
+      "w": 21,
+      "h": 20
+    },
+    {
+      "group": "Grass & bushes",
+      "name": "grass_12",
+      "file": "grass_12.png",
+      "w": 22,
+      "h": 19
+    },
+    {
+      "group": "Grass & bushes",
+      "name": "grass_13",
+      "file": "grass_13.png",
+      "w": 23,
+      "h": 17
+    },
+    {
+      "group": "Grass & bushes",
+      "name": "grass_14",
+      "file": "grass_14.png",
+      "w": 15,
+      "h": 22
+    },
+    {
+      "group": "Grass & bushes",
+      "name": "grass_15",
+      "file": "grass_15.png",
+      "w": 9,
+      "h": 11
+    },
+    {
+      "group": "Mossy decorations",
+      "name": "mossy_d_0",
+      "file": "mossy_d_0.png",
+      "w": 200,
+      "h": 110
+    },
+    {
+      "group": "Mossy decorations",
+      "name": "mossy_d_1",
+      "file": "mossy_d_1.png",
+      "w": 200,
+      "h": 174
+    },
+    {
+      "group": "Mossy decorations",
+      "name": "mossy_d_2",
+      "file": "mossy_d_2.png",
+      "w": 200,
+      "h": 90
+    },
+    {
+      "group": "Mossy decorations",
+      "name": "mossy_d_3",
+      "file": "mossy_d_3.png",
+      "w": 200,
+      "h": 85
+    },
+    {
+      "group": "Mossy decorations",
+      "name": "mossy_d_4",
+      "file": "mossy_d_4.png",
+      "w": 200,
+      "h": 132
+    },
+    {
+      "group": "Mossy decorations",
+      "name": "mossy_d_5",
+      "file": "mossy_d_5.png",
+      "w": 200,
+      "h": 185
+    },
+    {
+      "group": "Mossy decorations",
+      "name": "mossy_d_6",
+      "file": "mossy_d_6.png",
+      "w": 58,
+      "h": 200
+    },
+    {
+      "group": "Mossy decorations",
+      "name": "mossy_d_7",
+      "file": "mossy_d_7.png",
+      "w": 56,
+      "h": 200
+    },
+    {
+      "group": "Mossy decorations",
+      "name": "mossy_d_8",
+      "file": "mossy_d_8.png",
+      "w": 57,
+      "h": 200
+    },
+    {
+      "group": "Mossy decorations",
+      "name": "mossy_d_9",
+      "file": "mossy_d_9.png",
+      "w": 33,
+      "h": 200
+    },
+    {
+      "group": "Mossy decorations",
+      "name": "mossy_d_10",
+      "file": "mossy_d_10.png",
+      "w": 180,
+      "h": 200
+    },
+    {
+      "group": "Mossy decorations",
+      "name": "mossy_d_11",
+      "file": "mossy_d_11.png",
+      "w": 200,
+      "h": 85
+    },
+    {
+      "group": "Mossy decorations",
+      "name": "mossy_d_12",
+      "file": "mossy_d_12.png",
+      "w": 200,
+      "h": 132
+    },
+    {
+      "group": "Mossy decorations",
+      "name": "mossy_d_13",
+      "file": "mossy_d_13.png",
+      "w": 200,
+      "h": 186
+    },
+    {
+      "group": "Mossy decorations",
+      "name": "mossy_d_14",
+      "file": "mossy_d_14.png",
+      "w": 113,
+      "h": 200
+    },
+    {
+      "group": "Mossy decorations",
+      "name": "mossy_d_15",
+      "file": "mossy_d_15.png",
+      "w": 200,
+      "h": 152
+    },
+    {
+      "group": "Mossy decorations",
+      "name": "mossy_d_16",
+      "file": "mossy_d_16.png",
+      "w": 200,
+      "h": 179
+    },
+    {
+      "group": "Mossy decorations",
+      "name": "mossy_d_17",
+      "file": "mossy_d_17.png",
+      "w": 152,
+      "h": 200
+    },
+    {
+      "group": "Mossy decorations",
+      "name": "mossy_d_18",
+      "file": "mossy_d_18.png",
+      "w": 144,
+      "h": 200
+    },
+    {
+      "group": "Mossy decorations",
+      "name": "mossy_d_19",
+      "file": "mossy_d_19.png",
+      "w": 84,
+      "h": 200
+    },
+    {
+      "group": "Mossy decorations",
+      "name": "mossy_d_20",
+      "file": "mossy_d_20.png",
+      "w": 84,
+      "h": 200
+    },
+    {
+      "group": "Mossy decorations",
+      "name": "mossy_d_21",
+      "file": "mossy_d_21.png",
+      "w": 85,
+      "h": 200
+    },
+    {
+      "group": "Mossy decorations",
+      "name": "mossy_d_22",
+      "file": "mossy_d_22.png",
+      "w": 44,
+      "h": 200
+    },
+    {
+      "group": "Mossy decorations",
+      "name": "mossy_d_23",
+      "file": "mossy_d_23.png",
+      "w": 44,
+      "h": 200
+    },
+    {
+      "group": "Mossy decorations",
+      "name": "mossy_d_24",
+      "file": "mossy_d_24.png",
+      "w": 98,
+      "h": 200
+    },
+    {
+      "group": "Mossy decorations",
+      "name": "mossy_d_25",
+      "file": "mossy_d_25.png",
+      "w": 138,
+      "h": 174
+    },
+    {
+      "group": "Mossy decorations",
+      "name": "mossy_d_26",
+      "file": "mossy_d_26.png",
+      "w": 43,
+      "h": 200
+    },
+    {
+      "group": "Mossy decorations",
+      "name": "mossy_d_27",
+      "file": "mossy_d_27.png",
+      "w": 30,
+      "h": 200
+    },
+    {
+      "group": "Mossy decorations",
+      "name": "mossy_d_28",
+      "file": "mossy_d_28.png",
+      "w": 98,
+      "h": 200
+    },
+    {
+      "group": "Mossy decorations",
+      "name": "mossy_d_29",
+      "file": "mossy_d_29.png",
+      "w": 87,
+      "h": 199
+    },
+    {
+      "group": "Mossy decorations",
+      "name": "mossy_d_30",
+      "file": "mossy_d_30.png",
+      "w": 66,
+      "h": 167
+    },
+    {
+      "group": "Mossy decorations",
+      "name": "mossy_d_31",
+      "file": "mossy_d_31.png",
+      "w": 64,
+      "h": 163
+    },
+    {
+      "group": "Mossy decorations",
+      "name": "mossy_d_32",
+      "file": "mossy_d_32.png",
+      "w": 73,
+      "h": 148
+    },
+    {
+      "group": "Mossy decorations",
+      "name": "mossy_d_33",
+      "file": "mossy_d_33.png",
+      "w": 71,
+      "h": 146
+    },
+    {
+      "group": "Mossy decorations",
+      "name": "mossy_d_34",
+      "file": "mossy_d_34.png",
+      "w": 64,
+      "h": 133
+    },
+    {
+      "group": "Mossy decorations",
+      "name": "mossy_d_35",
+      "file": "mossy_d_35.png",
+      "w": 68,
+      "h": 127
+    },
+    {
+      "group": "Mossy hanging plants",
+      "name": "mossy_h_0",
+      "file": "mossy_h_0.png",
+      "w": 68,
+      "h": 200
+    },
+    {
+      "group": "Mossy hanging plants",
+      "name": "mossy_h_1",
+      "file": "mossy_h_1.png",
+      "w": 68,
+      "h": 200
+    },
+    {
+      "group": "Mossy hanging plants",
+      "name": "mossy_h_2",
+      "file": "mossy_h_2.png",
+      "w": 62,
+      "h": 200
+    },
+    {
+      "group": "Mossy hanging plants",
+      "name": "mossy_h_3",
+      "file": "mossy_h_3.png",
+      "w": 74,
+      "h": 200
+    },
+    {
+      "group": "Mossy hanging plants",
+      "name": "mossy_h_4",
+      "file": "mossy_h_4.png",
+      "w": 74,
+      "h": 200
+    },
+    {
+      "group": "Mossy hanging plants",
+      "name": "mossy_h_5",
+      "file": "mossy_h_5.png",
+      "w": 56,
+      "h": 200
+    },
+    {
+      "group": "Mossy hanging plants",
+      "name": "mossy_h_6",
+      "file": "mossy_h_6.png",
+      "w": 74,
+      "h": 200
+    },
+    {
+      "group": "Mossy hanging plants",
+      "name": "mossy_h_7",
+      "file": "mossy_h_7.png",
+      "w": 200,
+      "h": 134
+    },
+    {
+      "group": "Mossy hanging plants",
+      "name": "mossy_h_8",
+      "file": "mossy_h_8.png",
+      "w": 200,
+      "h": 134
+    },
+    {
+      "group": "Mossy hanging plants",
+      "name": "mossy_h_9",
+      "file": "mossy_h_9.png",
+      "w": 200,
+      "h": 134
+    },
+    {
+      "group": "Mossy background decor",
+      "name": "mossy_bg_0",
+      "file": "mossy_bg_0.png",
+      "w": 52,
+      "h": 200
+    },
+    {
+      "group": "Mossy background decor",
+      "name": "mossy_bg_1",
+      "file": "mossy_bg_1.png",
+      "w": 196,
+      "h": 200
+    },
+    {
+      "group": "Mossy background decor",
+      "name": "mossy_bg_2",
+      "file": "mossy_bg_2.png",
+      "w": 88,
+      "h": 200
+    },
+    {
+      "group": "Mossy background decor",
+      "name": "mossy_bg_3",
+      "file": "mossy_bg_3.png",
+      "w": 200,
+      "h": 108
+    },
+    {
+      "group": "Mossy background decor",
+      "name": "mossy_bg_4",
+      "file": "mossy_bg_4.png",
+      "w": 200,
+      "h": 185
+    },
+    {
+      "group": "Mossy background decor",
+      "name": "mossy_bg_5",
+      "file": "mossy_bg_5.png",
+      "w": 200,
+      "h": 140
+    },
+    {
+      "group": "Tileset props",
+      "name": "tile_0",
+      "file": "tile_0.png",
+      "w": 192,
+      "h": 150
+    },
+    {
+      "group": "Plants (HD — may clash)",
+      "name": "plant_BlueFlower1",
+      "file": "plant_BlueFlower1.png",
+      "w": 162,
+      "h": 180,
+      "note": "HD art"
+    },
+    {
+      "group": "Plants (HD — may clash)",
+      "name": "plant_BlueFlower2",
+      "file": "plant_BlueFlower2.png",
+      "w": 154,
+      "h": 180,
+      "note": "HD art"
+    },
+    {
+      "group": "Plants (HD — may clash)",
+      "name": "plant_PlantJump",
+      "file": "plant_PlantJump.png",
+      "w": 180,
+      "h": 117,
+      "note": "HD art"
+    },
+    {
+      "group": "Plants (HD — may clash)",
+      "name": "plant_PlantJump2",
+      "file": "plant_PlantJump2.png",
+      "w": 180,
+      "h": 117,
+      "note": "HD art"
+    },
+    {
+      "group": "Plants (HD — may clash)",
+      "name": "plant_Plant_1",
+      "file": "plant_Plant_1.png",
+      "w": 80,
+      "h": 180,
+      "note": "HD art"
+    },
+    {
+      "group": "Plants (HD — may clash)",
+      "name": "plant_Plant_2",
+      "file": "plant_Plant_2.png",
+      "w": 180,
+      "h": 170,
+      "note": "HD art"
+    },
+    {
+      "group": "Plants (HD — may clash)",
+      "name": "plant_Plant_3",
+      "file": "plant_Plant_3.png",
+      "w": 180,
+      "h": 163,
+      "note": "HD art"
+    },
+    {
+      "group": "Plants (HD — may clash)",
+      "name": "plant_Plant_4",
+      "file": "plant_Plant_4.png",
+      "w": 51,
+      "h": 180,
+      "note": "HD art"
+    },
+    {
+      "group": "Plants (HD — may clash)",
+      "name": "plant_Plant_5",
+      "file": "plant_Plant_5.png",
+      "w": 94,
+      "h": 180,
+      "note": "HD art"
+    },
+    {
+      "group": "Plants (HD — may clash)",
+      "name": "plant_Plant_6",
+      "file": "plant_Plant_6.png",
+      "w": 74,
+      "h": 180,
+      "note": "HD art"
+    },
+    {
+      "group": "Plants (HD — may clash)",
+      "name": "plant_Plant_7",
+      "file": "plant_Plant_7.png",
+      "w": 75,
+      "h": 180,
+      "note": "HD art"
+    },
+    {
+      "group": "Plants (HD — may clash)",
+      "name": "plant_Plant_8_Poison",
+      "file": "plant_Plant_8_Poison.png",
+      "w": 180,
+      "h": 141,
+      "note": "HD art"
+    },
+    {
+      "group": "Plants (HD — may clash)",
+      "name": "plant_Plant_Wind_1",
+      "file": "plant_Plant_Wind_1.png",
+      "w": 180,
+      "h": 174,
+      "note": "HD art"
+    },
+    {
+      "group": "Scenes (NOT placeable)",
+      "name": "church_scene",
+      "file": "church_scene.png",
+      "w": 320,
+      "h": 200,
+      "note": "1 of 15 full scenes (4000x2500, baked bg + scanlines)"
+    },
+    {
+      "group": "Maps / backgrounds",
+      "name": "magical_road",
+      "file": "magical_road.png",
+      "w": 320,
+      "h": 150,
+      "note": "parallax map pack, not a prop"
+    },
+    {
+      "group": "Maps / backgrounds",
+      "name": "japan_scene1",
+      "file": "japan_scene1.png",
+      "w": 320,
+      "h": 213,
+      "note": "Japanese background scene"
+    },
+    {
+      "group": "Maps / backgrounds",
+      "name": "japan_scene3",
+      "file": "japan_scene3.png",
+      "w": 320,
+      "h": 213,
+      "note": "Japanese background scene"
+    }
+  ]
+}

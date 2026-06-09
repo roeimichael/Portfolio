@@ -1,0 +1,146 @@
+{
+  "order": [
+    "elder",
+    "merchant",
+    "blacksmith",
+    "king",
+    "princess",
+    "guard",
+    "seer",
+    "minstrel",
+    "captain",
+    "priestess"
+  ],
+  "npcs": {
+    "elder": {
+      "frameW": 32,
+      "frameH": 32,
+      "bbox": {
+        "x0": 5,
+        "y0": 8,
+        "x1": 24,
+        "y1": 31
+      },
+      "anims": {
+        "idle": 4
+      }
+    },
+    "merchant": {
+      "frameW": 32,
+      "frameH": 32,
+      "bbox": {
+        "x0": 3,
+        "y0": 2,
+        "x1": 30,
+        "y1": 31
+      },
+      "anims": {
+        "idle": 5
+      }
+    },
+    "blacksmith": {
+      "frameW": 34,
+      "frameH": 34,
+      "bbox": {
+        "x0": 7,
+        "y0": 3,
+        "x1": 24,
+        "y1": 32
+      },
+      "anims": {
+        "idle": 5
+      }
+    },
+    "king": {
+      "frameW": 34,
+      "frameH": 34,
+      "bbox": {
+        "x0": 4,
+        "y0": 1,
+        "x1": 27,
+        "y1": 32
+      },
+      "anims": {
+        "idle": 5
+      }
+    },
+    "princess": {
+      "frameW": 32,
+      "frameH": 32,
+      "bbox": {
+        "x0": 8,
+        "y0": 7,
+        "x1": 27,
+        "y1": 31
+      },
+      "anims": {
+        "idle": 4
+      }
+    },
+    "guard": {
+      "frameW": 32,
+      "frameH": 32,
+      "bbox": {
+        "x0": 4,
+        "y0": 1,
+        "x1": 23,
+        "y1": 31
+      },
+      "anims": {
+        "idle": 4
+      }
+    },
+    "seer": {
+      "frameW": 34,
+      "frameH": 34,
+      "bbox": {
+        "x0": 9,
+        "y0": 4,
+        "x1": 26,
+        "y1": 31
+      },
+      "anims": {
+        "idle": 6
+      }
+    },
+    "minstrel": {
+      "frameW": 34,
+      "frameH": 34,
+      "bbox": {
+        "x0": 9,
+        "y0": 2,
+        "x1": 29,
+        "y1": 31
+      },
+      "anims": {
+        "idle": 5
+      }
+    },
+    "captain": {
+      "frameW": 32,
+      "frameH": 32,
+      "bbox": {
+        "x0": 7,
+        "y0": 2,
+        "x1": 24,
+        "y1": 31
+      },
+      "anims": {
+        "idle": 4
+      }
+    },
+    "priestess": {
+      "frameW": 32,
+      "frameH": 32,
+      "bbox": {
+        "x0": 6,
+        "y0": 3,
+        "x1": 26,
+        "y1": 31
+      },
+      "anims": {
+        "idle": 5
+      }
+    }
+  }
+}

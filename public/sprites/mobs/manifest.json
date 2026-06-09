@@ -1,0 +1,70 @@
+{
+  "mushroom": {
+    "frameW": 150,
+    "frameH": 150,
+    "bbox": {
+      "x0": 64,
+      "y0": 64,
+      "x1": 86,
+      "y1": 100
+    },
+    "anims": {
+      "idle": 4,
+      "walk": 8,
+      "attack": 8,
+      "hit": 4,
+      "death": 4
+    }
+  },
+  "skeleton": {
+    "frameW": 150,
+    "frameH": 150,
+    "bbox": {
+      "x0": 60,
+      "y0": 50,
+      "x1": 104,
+      "y1": 100
+    },
+    "anims": {
+      "idle": 4,
+      "walk": 4,
+      "attack": 8,
+      "hit": 4,
+      "death": 4
+    }
+  },
+  "flying_eye": {
+    "frameW": 150,
+    "frameH": 150,
+    "bbox": {
+      "x0": 57,
+      "y0": 61,
+      "x1": 97,
+      "y1": 91
+    },
+    "anims": {
+      "walk": 8,
+      "idle": 8,
+      "attack": 8,
+      "hit": 4,
+      "death": 4
+    }
+  },
+  "slime": {
+    "frameW": 156,
+    "frameH": 156,
+    "bbox": {
+      "x0": 56,
+      "y0": 69,
+      "x1": 99,
+      "y1": 86
+    },
+    "anims": {
+      "idle": 14,
+      "walk": 6,
+      "attack": 19,
+      "hit": 3,
+      "death": 11
+    }
+  }
+}
