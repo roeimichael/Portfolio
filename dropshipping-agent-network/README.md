@@ -53,10 +53,18 @@ dropshipping-agent-network/
 ├── README.md                  ← you are here
 └── docs/
     ├── ARCHITECTURE.md         ← full system design, agent roster, pipeline, tech stack
+    ├── AUTONOMY_ENGINE.md      ← ★ how it runs without uncertainty (deterministic core + escalation)
+    ├── MARKET_INTERFACES.md    ← ★ how it actually touches the markets (every integration, edge by edge)
+    ├── PROVISIONING.md         ← ★ what YOU enable for me (the capability/credential checklist)
     ├── AGENTS.md               ← per-subagent contracts (inputs, tools, outputs, limits)
     ├── LIVE_OVERSIGHT.md       ← how the Fable 5 live session plugs in and supervises
     └── ROADMAP.md              ← phased build plan, from paper-trading to real orders
 ```
+
+**Start with the three ★ docs** — they answer the core questions: *how does it run
+autonomously without uncertainty* (`AUTONOMY_ENGINE.md`), *how does it interface with the
+markets* (`MARKET_INTERFACES.md`), and *what do you need to give me to enable it*
+(`PROVISIONING.md`).
 
 ## ⚠️ Reality check before you build
 
