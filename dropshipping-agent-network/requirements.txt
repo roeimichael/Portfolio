@@ -1,0 +1,6 @@
+# The core runs on the Python 3 standard library ONLY — no install needed to
+# test in paper mode.
+#
+# Install this ONLY if you set USE_LLM=true (to let Claude make the decisions):
+#   pip install -r requirements.txt
+anthropic>=0.40.0

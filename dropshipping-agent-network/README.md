@@ -4,9 +4,20 @@
 > listing, order routing, shipment management, exception handling, and customer comms —
 > with a **live Fable 5 session** acting as a 24/7 supervisor over the whole environment.
 
-This folder is a **design draft only**. It contains no live credentials and runs nothing
-against real marketplaces. It's meant to be moved into your project subfolder and built out
-in phases. Read [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md) for the full picture.
+This folder now contains **both the design and a working, runnable implementation.** It
+ships with no live credentials and runs entirely in a simulated "paper" mode out of the box
+(Python 3 stdlib only — nothing to install, nothing to spend). Move it into your project
+subfolder whenever you like.
+
+### ▶ Run it in 30 seconds
+```bash
+cd dropshipping-agent-network && ./run.sh        # then open http://127.0.0.1:8787
+```
+Watch orders flow through the full pipeline autonomously and three issues escalate for your
+approval. **See [`QUICKSTART.md`](QUICKSTART.md) for the morning walkthrough** and how to
+flip on the real brain / real store one piece at a time.
+
+For the design rationale, read [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md) and the ★ docs below.
 
 ---
 
@@ -51,6 +62,10 @@ build trust.
 ```
 dropshipping-agent-network/
 ├── README.md                  ← you are here
+├── QUICKSTART.md               ← ▶ run + test it (start here in the morning)
+├── run.sh                      ← one-command start
+├── app/                        ← the runnable system (engine, guardrail, brains, adapters…)
+├── tests/test_core.py          ← 15 safety/state-machine checks
 └── docs/
     ├── ARCHITECTURE.md         ← full system design, agent roster, pipeline, tech stack
     ├── AUTONOMY_ENGINE.md      ← ★ how it runs without uncertainty (deterministic core + escalation)
